@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY-Motorcycle LED - 联系我们</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image\logo\logo.png" alt="公司logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html" data-i18n="home">首页</a></li>
+                <li><a href="about.html" data-i18n="about">关于我们</a></li>
+                <li><a href="products.html" data-i18n="products">产品</a></li>
+                <li><a href="culture.html" data-i18n="culture">企业文化</a></li>
+                <li><a href="contact.html" class="active" data-i18n="contact">联系我们</a></li>
+                <li class="lang-switch"><a href="#" id="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="hero-contact" style="background-image: url('image/workingEnvironment/门店2.jpg');">
+            <h1 data-i18n="contact-title">联系我们</h1>
+            <p data-i18n="contact-subtitle">我们期待与您沟通</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-info">
+                    <h2 data-i18n="contact-info">联系方式</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-i18n="address">地址</h3>
+                            <p>湖南省耒阳市蔡子池街道办事处西关居委会金山服装城市场3楼180号</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-i18n="phone">电话</h3>
+                            <p>+86 13660883159</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-i18n="email">邮箱</h3>
+                            <p>info@bymotorcycleled.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-qq"></i>
+                        <div>
+                            <h3>QQ</h3>
+                            <p>2867244486</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2 data-i18n="leave-message">给我们留言</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">留言内容</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" data-i18n="send">发送</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 data-i18n="our-location">我们的位置</h2>
+                <div id="map" style="height: 400px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="copyright">© 2023 BY-Motorcycle LED. All rights reserved.</p>
+    </footer>
+
+    <!-- 添加浮动菜单 -->
+    <div class="floating-menu">
+        <div class="menu-item" data-modal="qq"><i class="fab fa-qq"></i></div>
+        <div class="menu-item" data-modal="wechat"><i class="fab fa-weixin"></i></div>
+        <div class="menu-item" data-modal="phone"><i class="fas fa-phone"></i></div>
+        <div class="menu-item" id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+    </div>
+
+    <!-- 添加模态框 -->
+    <div class="modal" id="qq-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>QQ二维码</h2>
+            <img src="image/lx/QQ二维码.jpg" alt="QQ二维码">
+        </div>
+    </div>
+    
+    <div class="modal" id="wechat-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>微信二维码</h2>
+            <img src="image/lx/微信图二维码.jpg" alt="微信二维码">
+        </div>
+    </div>
+    
+    <div class="modal" id="phone-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>联系电话</h2>
+            <p>+86 13660883159</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('map').setView([26.4224, 112.8471], 13); // 耒阳市的大致坐标
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([26.4224, 112.8471]).addTo(map)
+                .bindPopup('BY-Motorcycle LED<br>湖南省耒阳市蔡子池街道办事处')
+                .openPopup();
+        });
+    </script>
+</body>
+</html>

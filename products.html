@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovation Company - Products</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image\logo\logo.png" alt="公司logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About Us</a></li>
+                <li><a href="products.html" class="active" data-i18n="products">Products</a></li>
+                <li><a href="culture.html" data-i18n="culture">Company Culture</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact Us</a></li>
+                <li class="lang-switch"><a href="#" id="lang-switch">中文</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="products-page">
+        <h1 data-i18n="our-products" style="margin-top: 50px;">Our Products</h1>
+        
+        <!-- 添加搜索框 -->
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Search products..." data-i18n="search-placeholder">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="product-categories">
+            <a href="#" class="category active" data-category="all" data-i18n="all-products">All Products</a>
+            <a href="#" class="category" data-category="category1" data-i18n="category1">Category 1</a>
+            <a href="#" class="category" data-category="category2" data-i18n="category2">Category 2</a>
+            <a href="#" class="category" data-category="category3" data-i18n="category3">Category 3</a>
+        </div>
+        <div class="product-grid">
+            <div class="product" data-category="category1">
+                <img src="image/shangpin/24W LED 双色白色琥珀色聚光灯/主图-1.jpg" alt="Product 1">
+                <h3 data-i18n="Amber spotlight">Amber spotlight</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="24W LED bi-color white amber spotlight">24W LED bi-color white amber spotlight</span></p>
+                <a href="product-details/product1.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category2">
+                <img src="image/shangpin/3 合 1 摩托车转向信号/主图-1.jpg" alt="Product 2">
+                <h3 data-i18n="Motorcycle turn signals">Turn signals</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="3-in-1 motorcycle turn signal">3-in-1 motorcycle turn signal</span></p>
+                <a href="product-details/product2.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/嵌入式转向信号指示灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Recessed indicator">Recessed indicator</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Recessed turn signal indicator">Recessed turn signal indicator</span></p>
+                <a href="product-details/product3.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/猫头鹰形摩托车转向信号灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Recessed indicator">Owl signal lights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Owl-shaped motorcycle turn signals">Owl-shaped motorcycle turn signals</span></p>
+                <a href="product-details/product4.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/摩托车指示灯流动/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Recessed indicator">Mobile indicator</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="The motorcycle indicator light flows">The motorcycle indicator light flows</span></p>
+                <a href="product-details/product5.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/4 件套摩托车转向灯套件/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Recessed indicator">Mobile indicator</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="The motorcycle indicator light flows">The motorcycle indicator light flows</span></p>
+                <a href="product-details/product6.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/LED 大灯适用于摩托车带铁/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="LED headlights">LED headlights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="LED suitable for motorcycles with iron">LED suitable for motorcycles with iron</span></p>
+                <a href="product-details/product7.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/摩托车大灯圆形/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Recessed indicator">Round headlights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Motorcycle headlights are round">Motorcycle headlights are round</span></p>
+                <a href="product-details/product8.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/骷髅摩托车 LED 雾灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Skull LEDs">Skull LEDs</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Skeletal Motorcycle LED Fog Lights">Skeletal Motorcycle LED Fog Lights</span></p>
+                <a href="product-details/product9.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/手柄杆手柄端插头侧标记灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Side marker light">Side marker lights</h3>
+                <p><span data-i18n="description"><Descript></Descript>ion of</span> <span data-i18n="Handle rod handle end side marker light">Handle rod handle end side marker light</span></p>
+                <a href="product-details/product10.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <!-- 十个 -->
+            <div class="product" data-category="category1">
+                <img src="image/shangpin/防水越野琥珀色排水灯/主图-1.jpg" alt="Product 1">
+                <h3 data-i18n="Amber drain light">Amber drain light</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Waterproof off-road amber drain light">Waterproof off-road amber drain light</span></p>
+                <a href="product-details/product11.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category2">
+                <img src="image/shangpin/双色辅助驾驶灯/主图-1.jpg" alt="Product 2">
+                <h3 data-i18n="Driving lights">Driving lights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="3-in-1 motorcycle turn signal">Two-tone driver assistance lights</span></p>
+                <a href="product-details/product12.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/LED 灯泡适用于川崎/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="LED Kawasaki">LED Kawasaki</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="LED bulbs are for Kawasaki">LED bulbs are for Kawasaki</span></p>
+                <a href="product-details/product13.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/雾灯泡兼容本田/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Fog bulbsr">Fog bulbs</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Fog bulbs are compatible with Honda">Fog bulbs are compatible with Honda</span></p>
+                <a href="product-details/product14.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/亮度高功率 h15 雾灯灯泡/主图-2.jpg" alt="Product 3">
+                <h3 data-i18n="H15 fog bulb">H15 fog bulb</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Brightness high power H15 fog bulbs">Brightness high power H15 fog bulbs</span></p>
+                <a href="product-details/product15.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/12V 12LED 适用于摩托车/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="12V 12LED">12V 12LED</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="12V 12LED for motorcycles">12V 12LED for motorcycles</span></p>
+                <a href="product-details/product16.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/日间行车灯刹车灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Brake lights">Brake lights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Daytime running lights and brake lights">Daytime running lights and brake lights</span></p>
+                <a href="product-details/product17.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/白色摩托车驾驶雾灯条/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Fog light strip">Fog light strip</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Motorcycle driving fog light strip">Motorcycle driving fog light strip</span></p>
+                <a href="product-details/product18.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/骷髅头 LED 琥珀色/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Skull LED Amber">Skull LED Amber</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Skull Motorcycle LED Amber">Skull Motorcycle LED Amber</span></p>
+                <a href="product-details/product19.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/摩托车驾驶雾灯双色琥珀色/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Amber fog lamp 2">Amber fog lamp 2</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Motorcycle driving fog lights two-colored">Motorcycle driving fog lights two-colored</span></p>
+                <a href="product-details/product20.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+            <!-- 十个 -->
+            <div class="product" data-category="category1">
+                <img src="image/shangpin/子弹前后转向信号/主图-1.jpg" alt="Product 1">
+                <h3 data-i18n="Turn signals">Turn signals</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Bullet front and rear turn signals">Bullet front and rear turn signals</span></p>
+                <a href="product-details/product21.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category2">
+                <img src="image/shangpin/防水辅助聚光灯/主图-1.jpg" alt="Product 2">
+                <h3 data-i18n="spotlight">spotlight</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Waterproof auxiliary spotlight">Waterproof auxiliary spotlight</span></p>
+                <a href="product-details/product22.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/聚光灯投影仪工作灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Work lights">Work lights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Spotlight projector work light">Spotlight projector work light</span></p>
+                <a href="product-details/product23.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/90W LED 琥珀色黄色点光束/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Fog bulbsr">Fog bulbs</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Fog bulbs are compatible with Honda">Fog bulbs are compatible with Honda</span></p>
+                <a href="product-details/product24.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/12000 流明摩托车辅助驾驶灯/主图-1 (1).jpg" alt="Product 3">
+                <h3 data-i18n="Driving lights">Driving lights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="motorcycle auxiliary driving light">motorcycle auxiliary driving light</span></p>
+                <a href="product-details/product25.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/琥珀色驾驶辅助吊舱灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="Pod lights">Pod lights</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Amber driving assistance pod light">Amber driving assistance pod light</span></p>
+                <a href="product-details/product26.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/LED 开关闪烁器/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="scintillator">scintillator</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="LED switch scintillator">LED switch scintillator</span></p>
+                <a href="product-details/product27.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/黄色琥珀色流动闪烁器/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="scintillator">scintillator</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Amber flow scintillator">Amber flow scintillator</span></p>
+                <a href="product-details/product28.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="image/shangpin/叶片形状双色前后指示灯/主图-1.jpg" alt="Product 3">
+                <h3 data-i18n="pilot lamp">pilot lamp</h3>
+                <p><span data-i18n="description">Description of</span> <span data-i18n="Blade shape indicator light">Blade shape indicator light</span></p>
+                <a href="product-details/product29.html" class="btn" data-i18n="learn-more">Learn More</a>
+            </div>
+            <!-- 共29个产品 -->
+        </div>
+    </main>
+
+    <footer>
+        <p data-i18n="copyright">© 2023 Tech Innovation Company. All rights reserved.</p>
+    </footer>
+
+    <!-- 添加浮动菜单 -->
+    <div class="floating-menu">
+        <div class="menu-item" data-modal="qq"><i class="fab fa-qq"></i></div>
+        <div class="menu-item" data-modal="wechat"><i class="fab fa-weixin"></i></div>
+        <div class="menu-item" data-modal="phone"><i class="fas fa-phone"></i></div>
+        <div class="menu-item" id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+    </div>
+
+    <!-- 添加模态框 -->
+    <div class="modal" id="qq-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>QQ二维码</h2>
+            <img src="image/lx/QQ二维码.jpg" alt="QQ二维码">
+        </div>
+    </div>
+    
+    <div class="modal" id="wechat-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>微信二维码</h2>
+            <img src="image/lx/微信图二维码.jpg" alt="微信二维码">
+        </div>
+    </div>
+    
+    <div class="modal" id="phone-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>联系电话</h2>
+            <p>+86 13660883159</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
