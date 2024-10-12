@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY-Motorcycle LED - 企业文化</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image\logo\logo.png" alt="公司logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html" data-i18n="home">首页</a></li>
+                <li><a href="about.html" data-i18n="about">关于我们</a></li>
+                <li><a href="products.html" data-i18n="products">产品</a></li>
+                <li><a href="culture.html" class="active" data-i18n="culture">企业文化</a></li>
+                <li><a href="contact.html" data-i18n="contact">联系我们</a></li>
+                <li class="lang-switch"><a href="#" id="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="culture-page">
+        <section class="hero-culture" style="background-image: url('image/workingEnvironment/门店1.jpg');">
+            <h1 data-i18n="culture-title">企业文化</h1>
+            <p data-i18n="culture-slogan">创新、诚信、卓越</p>
+        </section>
+
+        <section class="culture-values">
+            <div class="container">
+                <h2 data-i18n="our-values">我们的价值观</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3 data-i18n="value-innovation">创新</h3>
+                        <p data-i18n="value-innovation-desc">不断追求技术突破和创新，引领行业发展</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3 data-i18n="value-integrity">诚信</h3>
+                        <p data-i18n="value-integrity-desc">以诚信为本，赢得客户信赖</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-users"></i>
+                        <h3 data-i18n="value-teamwork">团队</h3>
+                        <p data-i18n="value-teamwork-desc">培养协作精神，共同成长</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-trophy"></i>
+                        <h3 data-i18n="value-excellence">卓越</h3>
+                        <p data-i18n="value-excellence-desc">追求卓越，不断超越自我</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-mission">
+            <div class="container">
+                <h2 data-i18n="our-mission">我们的使命</h2>
+                <p data-i18n="mission-statement">通过科技创新，为客户创造价值，推动社会进步。我们致力于：</p>
+                <ul>
+                    <li data-i18n="mission-item1">提供高品质的LED照明解决方案</li>
+                    <li data-i18n="mission-item2">持续改进产品性能和用户体验</li>
+                    <li data-i18n="mission-item3">为摩托车爱好者带来安全和时尚的骑行体验</li>
+                    <li data-i18n="mission-item4">推动行业标准的提升和可持续发展</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="culture-environment">
+            <div class="container">
+                <h2 data-i18n="work-environment">工作环境</h2>
+                <div class="environment-grid">
+                    <div class="environment-item">
+                        <img src="image/workingEnvironment/货架 (1).jpg" alt="办公环境">
+                        <h3 data-i18n="modern-office">现代化办公环境</h3>
+                    </div>
+                    <div class="environment-item">
+                        <img src="image/workingEnvironment/货架 (4).jpg" alt="团队活动">
+                        <h3 data-i18n="team-activities">丰富的团队活动</h3>
+                    </div>
+                    <div class="environment-item">
+                        <img src="image/workingEnvironment/货架 (3).jpg" alt="培训发展">
+                        <h3 data-i18n="training-development">培训与发展机会</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="copyright">© 2023 BY-Motorcycle LED. All rights reserved.</p>
+    </footer>
+
+    <!-- 添加浮动菜单 -->
+    <div class="floating-menu">
+        <div class="menu-item" data-modal="qq"><i class="fab fa-qq"></i></div>
+        <div class="menu-item" data-modal="wechat"><i class="fab fa-weixin"></i></div>
+        <div class="menu-item" data-modal="phone"><i class="fas fa-phone"></i></div>
+        <div class="menu-item" id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+    </div>
+
+    <!-- 添加模态框 -->
+    <div class="modal" id="qq-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>QQ二维码</h2>
+            <img src="image/lx/QQ二维码.jpg" alt="QQ二维码">
+        </div>
+    </div>
+    
+    <div class="modal" id="wechat-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>微信二维码</h2>
+            <img src="image/lx/微信图二维码.jpg" alt="微信二维码">
+        </div>
+    </div>
+    
+    <div class="modal" id="phone-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>联系电话</h2>
+            <p>+86 13660883159</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
